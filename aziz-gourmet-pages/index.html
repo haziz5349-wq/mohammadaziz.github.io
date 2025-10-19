@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gourmet Catering — Mohammad Aziz</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .brand {letter-spacing: 3px;}
+    .menu-item {border-bottom: 1px solid #eee; padding: 12px 0;}
+    .price {float: right; color: #777;}
+  </style>
+</head>
+<body class="w3-light-grey">
+
+<div class="w3-top w3-white w3-card">
+  <div class="w3-content" style="max-width:1100px">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button brand"><b>Gourmet</b> Catering</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+      <a href="#menu" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header class="w3-display-container w3-grayscale-min" style="margin-top:45px">
+  <img src="images/hero.svg" alt="Catering dishes" style="width:100%">
+  <div class="w3-display-bottomleft w3-padding w3-black w3-opacity-min">
+    <h1 class="w3-text-white" style="margin:0 8px">Gourmet au Catering</h1>
+  </div>
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+  <div id="about" class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding">
+      <img src="images/about.svg" alt="Chefs preparing food" class="w3-image w3-round w3-card">
+    </div>
+    <div class="w3-col m6 w3-padding">
+      <h2>About</h2>
+      <p>We craft simple, seasonal menus that highlight fresh ingredients. Whether you’re planning a small gathering or a large celebration, our team delivers clean flavors and on-time service.</p>
+      <p>This static website uses W3.CSS and runs on GitHub Pages. It’s fast to deploy and easy to maintain.</p>
+      <p><b>Owner</b> Mohammad Aziz</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="menu" class="w3-container w3-padding-64">
+    <h2>Menu</h2>
+    <div class="w3-row-padding">
+      <div class="w3-col m4">
+        <img src="images/dish1.svg" alt="Roasted vegetable platter" class="w3-image w3-round w3-card w3-margin-bottom">
+        <div class="menu-item"><span>Roasted Vegetable Platter</span><span class="price">$14</span></div>
+        <div class="menu-item"><span>Caprese Skewers</span><span class="price">$12</span></div>
+      </div>
+      <div class="w3-col m4">
+        <img src="images/dish2.svg" alt="Pasta primavera" class="w3-image w3-round w3-card w3-margin-bottom">
+        <div class="menu-item"><span>Pasta Primavera</span><span class="price">$16</span></div>
+        <div class="menu-item"><span>Lemon Herb Chicken</span><span class="price">$18</span></div>
+      </div>
+      <div class="w3-col m4">
+        <img src="images/dish3.svg" alt="Seasonal fruit tart" class="w3-image w3-round w3-card w3-margin-bottom">
+        <div class="menu-item"><span>Seasonal Fruit Tart</span><span class="price">$8</span></div>
+        <div class="menu-item"><span>Chocolate Mousse Cups</span><span class="price">$7</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="contact" class="w3-container w3-padding-64">
+    <h2>Contact</h2>
+    <p>Reach out to check dates, design a menu, or get a quote.</p>
+    <p><b>Email</b> you@example.com</p>
+    <p><b>Location</b> Northern Virginia</p>
+    <form class="w3-container w3-card w3-white w3-round w3-padding" onsubmit="return false">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name"></p>
+      <p><input class="w3-input w3-border" type="email" placeholder="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject"></p>
+      <p><textarea class="w3-input w3-border" placeholder="Message" rows="4"></textarea></p>
+      <p><button class="w3-button w3-black">Send</button></p>
+    </form>
+  </div>
+
+</div>
+
+<footer class="w3-center w3-padding-32">
+  <p>© <span id="year"></span> Mohammad Aziz</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
